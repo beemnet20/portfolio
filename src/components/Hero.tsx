@@ -29,7 +29,7 @@ const Hexagon = ({ position }: { position: THREE.Vector3 }) => {
       onPointerOver={() => setHover(true)}
       onPointerOut={() => setHover(false)}
     >
-      <lineBasicMaterial color={hovered ? 0xffff00 : 0x000000} />
+      <lineBasicMaterial color={hovered ? 0xfef08a : 0x000000} />
       <primitive object={edges} attach='geometry' />
     </lineSegments>
   );
@@ -63,18 +63,27 @@ export default function Hero() {
       />
       <div className='absolute w-half m-8  top-1/4 transform -translate-y-1/4 z-10'>
         <div className='text-4xl z-10'>
-          Hi, my
+          Hi,
           <br />
-          name is <span style={{ color: 'yellow' }}>Bee.</span> I&apos;m a <br />
-          <span className='text-3xl' style={{ color: 'yellow' }}>
-            <TypeWriter
-              options={{
-                strings: ['Full Stack Developer', 'Software Engineer', 'Web Developer', 'R Developer', 'Dog enthusiast'],
-                autoStart: true,
-                loop: true,
-              }}
-            />
-          </span>
+          my name is <span style={{ color: '#fde047' }}>Bee.</span>
+          <br />
+          <div className='text-3xl inline'>
+            I&apos;m a{' '}
+            <div style={{color: "#fde047"}}  className='inline-block '>
+              <TypeWriter
+                options={{
+                  strings: [
+                    'full stack developer',
+                    'software engineer',
+                    'creative developer',
+                    'dog enthusiast',
+                  ],
+                  autoStart: true,
+                  loop: true,
+                }}
+              />
+            </div>
+          </div>
         </div>
       </div>
 
