@@ -53,14 +53,8 @@ export default function Hero() {
   }
 
   return (
-    <div className='h-screen w-full relative'>
-      <Image
-        src='/portfolio/android-chrome-192x192.png'
-        alt='Me'
-        width={36}
-        height={36}
-        className='absolute top-0 left-0 m-8 z-10'
-      />
+    <div id="home" className='h-screen w-full relative'>
+
       <div className='absolute w-half m-8  top-1/4 transform -translate-y-1/4 z-10'>
         <div className='text-4xl z-10'>
           Hi,
@@ -76,7 +70,7 @@ export default function Hero() {
                     'full stack developer',
                     'software engineer',
                     'creative developer',
-                    'dog enthusiast',
+                    'tinkerer',
                   ],
                   autoStart: true,
                   loop: true,

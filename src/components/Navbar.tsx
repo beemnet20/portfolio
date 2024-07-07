@@ -2,10 +2,10 @@ import { Disclosure, DisclosureButton, DisclosurePanel } from '@headlessui/react
 import { Bars3Icon, XMarkIcon } from '@heroicons/react/24/outline'
 
 const navigation = [
-  { name: 'Home', href: '/portfolio' },
-  { name: 'About', href: '#' },
-  { name: 'Projects', href: '#'},
-  { name: 'Contact', href: '#' },
+  { name: 'Home', href: '#home' },
+  { name: 'About', href: '#about' },
+  { name: 'Projects', href: '#projects'},
+  { name: 'Contact', href: '#contact' },
 ]
 
 function classNames(...classes: [string]) {
@@ -14,7 +14,7 @@ function classNames(...classes: [string]) {
 
 export default function Navbar() {
   return (
-    <Disclosure as="nav" className="">
+    <Disclosure as="nav" className="fixed z-20 block bg-black top-0  w-full">
       <div className="mx-auto max-w-7xl px-2 sm:px-6 lg:px-8">
         <div className="relative flex h-16 items-center justify-end">
           <div className="absolute inset-y-0 left-0 flex items-center sm:hidden">
@@ -26,6 +26,15 @@ export default function Navbar() {
               <XMarkIcon aria-hidden="true" className="hidden h-6 w-6 group-data-[open]:block" />
             </DisclosureButton>
           </div>
+          <div className="flex-1 flex justify-center sm:justify-start">
+            <a href="/portfolio" className="flex items-center">
+              <img
+                className="block h-8 w-auto"
+                src="/portfolio/android-chrome-192x192.png"
+                alt="Workflow"
+              />
+            </a>
+            </div>
           <div className="flex    justify-end sm:items-stretch sm:justify-start">
             <div className="justify-end hidden sm:ml-6 sm:block">
               <div className="flex space-x-4">
