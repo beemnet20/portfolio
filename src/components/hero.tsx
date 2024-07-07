@@ -61,11 +61,11 @@ export default function Hero() {
         height={36}
         className='absolute top-0 left-0 m-8 z-10'
       />
-      <p className='absolute w-half m-8  top-1/4 transform -translate-y-1/4 z-10'>
-        <p className='text-4xl z-10'>
+      <div className='absolute w-half m-8  top-1/4 transform -translate-y-1/4 z-10'>
+        <div className='text-4xl z-10'>
           Hi, my
           <br />
-          name is <span style={{ color: 'yellow' }}>Bee.</span> I'm a <br />
+          name is <span style={{ color: 'yellow' }}>Bee.</span> I&apos;m a <br />
           <span className='text-3xl' style={{ color: 'yellow' }}>
             <TypeWriter
               options={{
@@ -75,8 +75,8 @@ export default function Hero() {
               }}
             />
           </span>
-        </p>
-      </p>
+        </div>
+      </div>
 
       <Canvas
         className='absolute top-0 left-0 w-full h-full'
