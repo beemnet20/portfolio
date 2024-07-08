@@ -38,7 +38,7 @@ const About: React.FC = () => {
         <section className='col-span-3'>
           <h1 className='text-2xl font-bold mb-2'>About me</h1>
           <p className='text-lg'>
-            I'm Beemnet (Bee) Workeneh, a full stack developer based in Seattle,
+            I&apos;m Beemnet (Bee) Workeneh, a full stack developer based in Seattle,
             WA. My educational background is in Mechanical Engineering. My
             capstone project was the first time that I was exposed to coding and
             I fell in love with it. I have been coding ever since. I am
