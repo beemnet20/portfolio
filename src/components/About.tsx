@@ -52,7 +52,7 @@ const About: React.FC = () => {
       <br />
       <h2 className='text-2xl'>Skills</h2>
 
-      <div className='mt-2 grid grid-cols-4 gap-4'>
+      <div className='mt-2 grid grid-cols-2 sm:grid-cols-4 gap-4'>
         {skills.map((skill) => (
           <div
             key={skill.skill}

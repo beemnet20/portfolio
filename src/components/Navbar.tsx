@@ -42,7 +42,7 @@ export default function Navbar() {
               <Image
                 width={32}
                 height={32}
-                className=''
+                className='hidden sm:block'
                 src='/portfolio/android-chrome-192x192.png'
                 alt='Workflow'
               />
