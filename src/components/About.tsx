@@ -24,9 +24,9 @@ const About: React.FC = () => {
     <div
       id='about'
       style={{ scrollMarginTop: '100px' }}
-      className='flex m-8 flex-col h-screen'
+      className='flex m-8 flex-col h-full'
     >
-      <div className='grid grid-cols-4 gap-4'>
+      <div className='grid sm:grid-cols-4 gap-4'>
         <Image
           width={250}
           height={250}
