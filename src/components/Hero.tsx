@@ -55,7 +55,7 @@ export default function Hero() {
   return (
     <div id="home" className='h-screen w-full relative'>
 
-      <div className='absolute w-half m-8  top-1/4 transform -translate-y-1/4 z-10'>
+      <div className='absolute sm:w-half m-8  top-1/4 transform -translate-y-1/4 z-10'>
         <div className='text-4xl z-10'>
           Hi,
           <br />

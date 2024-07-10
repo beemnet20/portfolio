@@ -1,14 +1,14 @@
 import React from 'react';
 import PageTitle from './PageTitle';
 
-const Projects: React.FC = () => {
+const Contact: React.FC = () => {
   return (
     <div
       className='flex m-8 flex-col h-full'
     >
-        <PageTitle title='Projects' id='projects'/>
+      <PageTitle title='Contact me' id='contact' />
     </div>
   );
 };
 
-export default Projects;
+export default Contact;
