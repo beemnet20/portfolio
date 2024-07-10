@@ -2,6 +2,38 @@ import React, { useState } from 'react';
 import Image from 'next/image';
 import PageTitle from './PageTitle';
 
+const Skill = (skill: string, icon: string) => {
+  const [size, setSize] = useState<number>(50);
+  return (
+    <div
+      key={skill}
+      className='flex flex-col rounded-md bg-white'
+    >
+      <div className='sm:grid sm:grid-cols-3'>
+        <div className='sm:col-span-1'>
+          <div
+            style={{ minHeight: '70px' }}
+            onMouseOver={() => setSize(60)}
+            onMouseOut={() => setSize(50)}
+          >
+            <Image
+              className='m-2'
+              width={size}
+              height={size}
+              src={icon}
+              alt={skill}
+            />
+          </div>
+          <p className='lg:hidden text-black mx-2 my-1'>{skill}</p>
+        </div>
+        <div className='hidden lg:block col-span-2 bg-yellow-900 rounded-r-md'>
+          <p className='hidden lg:block'>{skill}</p>
+        </div>
+      </div>
+    </div>
+  );
+};
+
 const About: React.FC = () => {
   const [size, setSize] = useState<number>(200);
 
@@ -24,10 +56,8 @@ const About: React.FC = () => {
     { skill: 'Figma', icon: '/portfolio/logos/figma.svg' },
   ];
   return (
-    <div
-      className='flex m-8 flex-col h-full'
-    >
-      <PageTitle title='About me' id='about'/>
+    <div className='flex m-8 flex-col h-full'>
+      <PageTitle title='About me' id='about' />
       <div className='grid sm:grid-cols-6 gap-3'>
         <div className='sm:col-span-1'>
           <div
@@ -58,21 +88,7 @@ const About: React.FC = () => {
           <br />
           <h2 className='text-lg'>I have experience with </h2>
           <div className='mt-2 grid grid-cols-2 sm:grid-cols-4 gap-4 w-half'>
-            {skills.map((skill) => (
-              <div
-                key={skill.skill}
-                className='flex flex-col rounded-lg items-center justify-center bg-white'
-              >
-                <Image
-                  className='mt-2'
-                  width={50}
-                  height={50}
-                  src={skill.icon}
-                  alt={skill.skill}
-                />
-                <p className='text-black m-1'>{skill.skill}</p>
-              </div>
-            ))}
+            {skills.map((skill) => Skill(skill.skill, skill.icon))}
           </div>
           <span>and more...</span>
         </section>
