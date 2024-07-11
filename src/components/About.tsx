@@ -10,7 +10,7 @@ const Skill = (skill: string, icon: string) => {
       className='flex flex-col rounded-md bg-white'
     >
       <div className='sm:grid sm:grid-cols-3'>
-        <div className='sm:col-span-1'>
+        <div className='sm:col-span-2'>
           <div
             style={{ minHeight: '70px' }}
             onMouseOver={() => setSize(60)}
@@ -24,10 +24,7 @@ const Skill = (skill: string, icon: string) => {
               alt={skill}
             />
           </div>
-          <p className='lg:hidden text-black mx-2 my-1'>{skill}</p>
-        </div>
-        <div className='hidden lg:block col-span-2 bg-yellow-900 rounded-r-md'>
-          <p className='hidden lg:block'>{skill}</p>
+          <p className=' text-black mx-2 my-1'>{skill}</p>
         </div>
       </div>
     </div>
