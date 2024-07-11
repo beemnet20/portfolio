@@ -5,12 +5,13 @@ import {
 } from '@headlessui/react';
 import { Bars3Icon, XMarkIcon } from '@heroicons/react/24/outline';
 import Image from 'next/image';
+import React, { useEffect, useState } from 'react';
 
 const navigation = [
-  { name: 'Home', href: '#home' },
-  { name: 'About', href: '#about' },
-  { name: 'Projects', href: '#projects' },
-  { name: 'Contact', href: '#contact' },
+  { name: 'Home', href: '/portfolio' },
+  { name: 'About', href: '/portfolio/about' },
+  { name: 'Projects', href: '/portfolio/projects' },
+  { name: 'Contact', href: '/portfolio/contact' },
 ];
 
 function classNames(...classes: [string]) {
@@ -18,8 +19,22 @@ function classNames(...classes: [string]) {
 }
 
 export default function Navbar() {
+  const [active, setActive] = useState<string>('Home');
+  const [pageOrigin, setPageOrigin] = useState<string>('');
+
+  useEffect(() => {
+    const path = window.location.pathname;
+    setPageOrigin(window.location.origin);
+    navigation.forEach((item) => {
+      if (item.href === path) {
+        setActive(item.name);
+        console.log(item.name);
+      }
+    });
+  }, []);
+
   return (
-    <Disclosure as='nav' className='fixed z-20 block bg-black top-0  w-full'>
+    <Disclosure as='nav' className='z-20 block bg-black top-0  w-full'>
       <div className='mx-auto px-2 sm:px-6 lg:px-8'>
         <div className='relative flex h-16 items-center justify-end'>
           <div className='absolute inset-y-0 left-0 flex items-center sm:hidden'>
@@ -54,9 +69,13 @@ export default function Navbar() {
                 {navigation.map((item) => (
                   <a
                     key={item.name}
-                    href={item.href}
+                    href={`${pageOrigin}${item.href}`}
                     className={classNames(
-                      'text-gray-300 hover:bg-yellow-300 hover:text-gray-900 rounded-md px-3 py-2 text-sm font-medium',
+                      ` ${
+                        item.name === active
+                          ? 'text-gray-900 bg-yellow-300'
+                          : ''
+                      }  text-gray-300 hover:bg-yellow-300 hover:text-gray-900 rounded-md px-3 py-2 text-sm font-medium`,
                     )}
                   >
                     {item.name}

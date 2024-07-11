@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import Image from 'next/image';
-import PageTitle from './PageTitle';
+import PageTitle from '../../components/PageTitle';
 
 const Skill = (skill: string, icon: string) => {
   const [size, setSize] = useState<number>(50);
