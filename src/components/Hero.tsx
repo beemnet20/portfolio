@@ -80,7 +80,7 @@ export default function Hero() {
           </div>
         </div>
         <br />
-        <a className='btn bg-yellow-500 hover:bg-yellow-700 rounded-full text-black font-bold py-2 px-4 cursor-pointer' href="#contact">Contact me</a>
+        <a className='btn bg-yellow-500 hover:bg-yellow-700 rounded-full text-black font-bold py-2 px-4 cursor-pointer' href="/portfolio/contact">Contact me</a>
       </div>
 
       <Canvas

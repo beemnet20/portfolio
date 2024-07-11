@@ -19,18 +19,22 @@ function classNames(...classes: [string]) {
 }
 
 export default function Navbar() {
-  const [active, setActive] = useState<string>('Home');
+  const [active, setActive] = useState<string>('');
   const [pageOrigin, setPageOrigin] = useState<string>('');
 
-  useEffect(() => {
+  const getCurrentPage = () => { 
     const path = window.location.pathname;
+    let currentPage = '';
     setPageOrigin(window.location.origin);
     navigation.forEach((item) => {
       if (item.href === path) {
-        setActive(item.name);
-        console.log(item.name);
+        currentPage = item.name;
       }
     });
+    return currentPage;
+  }
+  useEffect(() => {
+    setActive(getCurrentPage());
   }, []);
 
   return (
@@ -65,7 +69,7 @@ export default function Navbar() {
           </div>
           <div className='flex    justify-end sm:items-stretch sm:justify-start'>
             <div className='justify-end hidden sm:ml-6 sm:block'>
-              <div className='flex space-x-4'>
+              <div className='flex '>
                 {navigation.map((item) => (
                   <a
                     key={item.name}
@@ -75,8 +79,10 @@ export default function Navbar() {
                         item.name === active
                           ? 'text-gray-900 bg-yellow-300'
                           : ''
-                      }  text-gray-300 hover:bg-yellow-300 hover:text-gray-900 rounded-md px-3 py-2 text-sm font-medium`,
+                      }  text-gray-300 hover:bg-yellow-300 hover:text-gray-900 rounded-md px-3 py-2  font-medium`,
                     )}
+                    onMouseEnter={() => setActive(item.name)}
+                    onMouseLeave={() => setActive(getCurrentPage())}
                   >
                     {item.name}
                   </a>
