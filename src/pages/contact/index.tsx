@@ -22,7 +22,6 @@ const Contact: React.FC = () => {
       setEmail('');
       return;
     }
-    console.log(serviceId, templateId)
     const templateParams = {
       user_name: name,
       user_email: email,
