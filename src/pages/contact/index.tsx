@@ -61,7 +61,7 @@ const Contact: React.FC = () => {
         <form className='rounded m-4 p-4 sm:w-1/2 mx-auto bg-gradient-to-r from-orange-200 via-amber-200 to-yellow-200'>
           <h3 className='font-bold text-xl text-black mb-4'>Contact me</h3>
           <div className='grid grid-cols-2 gap-2'>
-            <div className='mb-4 colspan-2'>
+            <div className='mb-4  colspan-4 sm:colspan-2'>
               <label htmlFor='name' className='block text-black font-bold mb-2'>
                 Name
               </label>
@@ -74,7 +74,7 @@ const Contact: React.FC = () => {
                 onChange={(e) => setName(e.target.value)}
               />
             </div>
-            <div className='mb-4 colspan-2'>
+            <div className='mb-4 colspan-4 sm:colspan-2'>
               <label
                 htmlFor='email'
                 className='block text-black font-bold mb-2'
