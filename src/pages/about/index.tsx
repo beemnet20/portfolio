@@ -10,7 +10,7 @@ const Skill = (skill: string, icon: string) => {
       className='flex flex-col rounded-md bg-white'
     >
       <div className='sm:grid sm:grid-cols-3'>
-        <div className='sm:col-span-2'>
+        <div className='sm:col-span-2 col-span1'>
           <div
             style={{ minHeight: '70px' }}
             onMouseOver={() => setSize(60)}
