@@ -2,34 +2,35 @@ import React, { useState } from 'react';
 import Image from 'next/image';
 import PageTitle from '../../components/PageTitle';
 
-const Skill = (skill: string, icon: string) => {
-  const [size, setSize] = useState<number>(50);
+const SkillCard = (skill: string, icon: string) => {
   return (
-    <div
-      key={skill}
-      className='flex flex-col rounded-md bg-white'
-    >
-      <div className='sm:grid sm:grid-cols-3'>
-        <div className='sm:col-span-2 col-span1'>
-          <div
-            style={{ minHeight: '70px' }}
-            onMouseOver={() => setSize(60)}
-            onMouseOut={() => setSize(50)}
-          >
-            <Image
-              className='m-2'
-              width={size}
-              height={size}
-              src={icon}
-              alt={skill}
-            />
+    <div key={skill} className=' rounded-lg  bg-gray-100'>
+      <div className='flex flex-row justify-between'>
+        <div className='flex'>
+          <Image
+            className='p-4  inline-block'
+            width={65}
+            height={65}
+            src={icon}
+            alt={skill}
+          />
+          <div className='inline-block my-auto'>
+            <span className='text-black text-l font-bold mx-0 inline-block'>
+              {skill}
+            </span>
+            <br />
+            <span className='text-black text-sm  mx-0 inline-block'>
+              description
+            </span>
           </div>
-          <p className=' text-black mx-2 my-1'>{skill}</p>
         </div>
+
+        <button className='text-gray-500 text-4xl mx-4 font-bold my-auto'>⋮</button>
       </div>
     </div>
   );
 };
+
 
 const About: React.FC = () => {
   const [size, setSize] = useState<number>(200);
@@ -84,8 +85,8 @@ const About: React.FC = () => {
           </p>
           <br />
           <h2 className='text-lg'>I have experience with </h2>
-          <div className='mt-2 grid grid-cols-2 sm:grid-cols-4 gap-4 w-half'>
-            {skills.map((skill) => Skill(skill.skill, skill.icon))}
+          <div className='mt-2 grid sm:grid-cols-2 lg:grid-cols-3 gap-4 w-half'>
+            {skills.map((skill) => SkillCard(skill.skill, skill.icon))}
           </div>
           <span>and more...</span>
         </section>
