@@ -1,0 +1,19 @@
+[
+  {
+    "title": "Degrees of Separation",
+    "description": "An interactive project that visualizes data structures and algorithms using the concept of degrees of separation.",
+    "tags": ["Data Structures", "Algorithms", "Graphs", "React", "D3.js"],
+    "image": "/portfolio/data/degrees-of-separation.gif",
+    "actions": [
+      {
+        "title": "View live",
+        "url": "https://beemnet20.github.io/degrees-of-separation/"
+      },
+      {
+        "title": "View source",
+        "url": "https://github.com/beemnet20/degrees-of-separation",
+        "icon": "/portfolio/logos/github.svg"
+      }
+    ]
+  }
+]
