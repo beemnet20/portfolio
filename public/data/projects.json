@@ -15,5 +15,52 @@
         "icon": "/portfolio/logos/github.svg"
       }
     ]
+  },
+  {
+    "title": "This portfolio",
+    "description": "A personal portfolio website built with React and Tailwind CSS.",
+    "tags": ["Next.js", "React", "Tailwind CSS", "three.js"],
+    "image": "/portfolio/data/portfolio.gif",
+    "actions": [
+      {
+        "title": "View source",
+        "url": "https://github.com/beemnet20/portfolio",
+        "icon": "/portfolio/logos/github.svg"
+      }
+    ]
+  },
+  {
+    "title": "MQTT case study",
+    "description": "An interactive project that demonstrates Message Queuing Telemetry Transport (MQTT) in a simulation of a realworld use case: remote monitoring of mining epuipment.",
+    "tags": ["MQTT", "JavaScript", "Bootstrap", "APEXCHARTS.js"],
+    "image": "/portfolio/data/mqtt-case-study.gif",
+    "actions": [
+      {
+        "title": "View live",
+        "url": "https://beemnet20.github.io/MQTT-case-study/"
+      },
+      {
+        "title": "View source",
+        "url": "https://github.com/beemnet20/MQTT-case-study",
+        "icon": "/portfolio/logos/github.svg"
+      }
+    ]
+  },
+  {
+    "title": "Work automation app",
+    "description": "An anonymized version of a work automation app that I developed. The blog type page goes over the UI/UX design process, the technologies used, and the problems addressed.",
+    "tags": ["Databases", "JavaScript", "Django", "Python"],
+    "image": "/portfolio/data/work-automation-app.gif",
+    "actions": [
+      {
+        "title": "View live",
+        "url": "https://beemnet20.github.io/Work-Automation-App/"
+      },
+      {
+        "title": "View source",
+        "url": "https://github.com/beemnet20/Work-Automation-App",
+        "icon": "/portfolio/logos/github.svg"
+      }
+    ]
   }
 ]
