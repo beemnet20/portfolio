@@ -62,5 +62,56 @@
         "icon": "/portfolio/logos/github.svg"
       }
     ]
+  },
+  {
+    "title": "Dash Gene Drive",
+    "description": "An open-source interactive python dash app that accompanied a researcher collegue's paper on gene drives.",
+    "tags": ["Python", "Dash", "plotly","Bootstrap", "open-source"],
+    "image": "/portfolio/data/dash-gene-drive.gif",
+    "actions": [
+      {
+        "title": "View live",
+        "url": "https://gene-drive.bmgf.io/"
+      },
+      {
+        "title": "View source",
+        "url": "https://github.com/InstituteforDiseaseModeling/dash-gene-drive/tree/main",
+        "icon": "/portfolio/logos/github.svg"
+      },
+      {
+        "title": "View paper",
+        "url": "https://malariajournal.biomedcentral.com/articles/10.1186/s12936-022-04242-2"
+      }
+    ]
+  }, 
+  {
+    "title": "PACE-HRH-UI",
+    "description": "An open-source R Shiny app that encapsulates the PACE-HRH R package for health human resources planning.",
+    "tags": ["R", "Shiny", "open-source", "windows app", "figma"],
+    "image": "/portfolio/data/pace-hrh-ui.gif",
+    "actions": [
+      {
+        "title": "View source",
+        "url": "https://github.com/InstituteforDiseaseModeling/PACE-HRH-UI",
+        "icon": "/portfolio/logos/github.svg"
+      }
+    ]
+  },
+  {
+    "title": "LOAD-A-DOSE",
+    "description": "A device to help accurately load insulin into syringes for people with low visual acuity", 
+    "tags": ["Arduino", "3D Printing", "C++", "protyping", "wire diagrams"],
+    "image": "/portfolio/data/load-a-dose.gif",
+    "actions": [
+      {
+        "title": "View source",
+        "url": "https://github.com/beemnet20/LOAD-A-DOSE/blob/master/device-code.ino",
+        "icon": "/portfolio/logos/github.svg"
+      },
+      {
+        "title":"View more",
+        "url":"/portfolio/projects/load-a-dose"
+      }
+    ]
   }
 ]
