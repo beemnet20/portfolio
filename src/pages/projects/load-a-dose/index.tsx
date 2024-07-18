@@ -27,7 +27,7 @@ const LoadADose: React.FC<{}> = () => {
             diabetic people that are blind or have low visual acuity. It has
             large tactile buttons that are designed with the key demographic in
             mind. There are many insulin devices in the market, what makes
-            Load-A-Dose stand out is it's affordability. Syringe and vial are
+            Load-A-Dose stand out is it&apos;s affordability. Syringe and vial are
             the cheapest form of insulin administration compared to syringe pens
             and closed loop insulin pumps. However for a person with low visual
             acuity the small markers on the already small syringes makes it
