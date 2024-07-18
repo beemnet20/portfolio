@@ -101,7 +101,7 @@
     "title": "LOAD-A-DOSE",
     "description": "A device to help accurately load insulin into syringes for people with low visual acuity", 
     "tags": ["Arduino", "3D Printing", "C++", "protyping", "wire diagrams"],
-    "image": "/portfolio/data/load-a-dose.gif",
+    "image": "/portfolio/data/load-a-dose/load-a-dose.gif",
     "actions": [
       {
         "title": "View source",
