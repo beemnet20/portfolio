@@ -28,7 +28,7 @@ const FeaturedImageGallery: React.FC<FeaturedImageGalleryProps> = ({
               height={100}
               width={100}
               src={item.url}
-              className='h-20 max-w-full cursor-pointer object-cover object-center'
+              className= { `${item.url === active? 'border-yellow-500 border-4 p-2':''} h-20 max-w-full cursor-pointer object-cover object-center`}
               alt='gallery-image'
             />
           </div>
