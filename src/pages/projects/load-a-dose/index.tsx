@@ -61,13 +61,13 @@ const LoadADose: React.FC<{}> = () => {
               complications.
             </p>
           </div>
-          <p className='m-2'>
+          <p className='m-2 text-lg'>
             Load-A-Dose was designed as part of Engineering in Health senior
             project at the University of Washington. My role was to design and
             prototype the hardware and firmware. I also designed some of the
             shrouding and the attachments to the linear actuator.
           </p>
-          <p className='m-2'>
+          <p className='m-2 text-lg'>
             I also designed and built a prototype of a Near Field Communications
             reader for insulin vials. As there are many types of insulin it is
             crucial that a person with low visual acuity is able to administer

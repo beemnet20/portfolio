@@ -47,6 +47,23 @@
     ]
   },
   {
+    "title":"beamCV",
+    "description": "Beam computer vision. A machine learning project to  train a model to recognize the components of a beam diagram in order to be able to perform the beam analysis. Included gathering and labeling data, training the model, and testing the model.",
+    "tags": ["Python", "Tensorflow", "Machine Learning", "Model Training"],
+    "image": "/portfolio/data/beamCV.gif",
+    "actions": [
+      {
+        "title": "View source",
+        "url": "https://github.com/beemnet20/beamCV",
+        "icon":"/portfolio/logos/github.svg"
+      },
+      {
+        "title": "View notebook",
+        "url": "https://colab.research.google.com/github/beemnet20/beamCV/blob/main/beamCV.ipynb"
+      }
+    ]
+  },
+  {
     "title": "Work automation app",
     "description": "An anonymized version of a work automation app that I developed. The blog type page goes over the UI/UX design process, the technologies used, and the problems addressed.",
     "tags": ["Databases", "JavaScript", "Django", "Python"],
@@ -66,7 +83,7 @@
   {
     "title": "Dash Gene Drive",
     "description": "An open-source interactive python dash app that accompanied a researcher collegue&apos;s paper on gene drives.",
-    "tags": ["Python", "Dash", "plotly","Bootstrap", "open-source"],
+    "tags": ["Python", "Dash", "plotly", "Bootstrap", "open-source"],
     "image": "/portfolio/data/dash-gene-drive.gif",
     "actions": [
       {
@@ -83,7 +100,7 @@
         "url": "https://malariajournal.biomedcentral.com/articles/10.1186/s12936-022-04242-2"
       }
     ]
-  }, 
+  },
   {
     "title": "PACE-HRH-UI",
     "description": "An open-source R Shiny app that encapsulates the PACE-HRH R package for health human resources planning.",
@@ -98,8 +115,21 @@
     ]
   },
   {
+    "title": "Optimization in Shiny",
+    "description": "An interactive R shiny app that demonstrates the use of the hill climbing algorithm to optimally place hospitals on a grid with houses.",
+    "tags": ["R", "Shiny", "Algorithms", "Optimization"],
+    "image": "/portfolio/data/optimization-in-shiny.gif",
+    "actions": [
+      {
+        "title": "View source",
+        "url": "https://github.com/beemnet20/optimization-in-shiny",
+        "icon": "/portfolio/logos/github.svg"
+      }
+    ]
+  },
+  {
     "title": "LOAD-A-DOSE",
-    "description": "A device to help accurately load insulin into syringes for people with low visual acuity", 
+    "description": "A device to help accurately load insulin into syringes for people with low visual acuity",
     "tags": ["Arduino", "3D Printing", "C++", "protyping", "wire diagrams"],
     "image": "/portfolio/data/load-a-dose/load-a-dose.gif",
     "actions": [
@@ -109,8 +139,20 @@
         "icon": "/portfolio/logos/github.svg"
       },
       {
-        "title":"View more",
-        "url":"/portfolio/projects/load-a-dose"
+        "title": "View more",
+        "url": "/portfolio/projects/load-a-dose"
+      }
+    ]
+  },
+  {
+    "title": "Smart Mirror",
+    "description": "A customizable smart mirror that displays the time, weather, and news headlines. Based on popular open-source project MagicMirror2.",
+    "tags": ["Raspberry Pi", "IoT", "wood working?", "cron"],
+    "image": "/portfolio/data/smart-mirror/smart-mirror.gif",
+    "actions": [
+      {
+        "title": "View more",
+        "url": "/portfolio/projects/smart-mirror"
       }
     ]
   }
