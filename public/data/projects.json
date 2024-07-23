@@ -47,6 +47,24 @@
     ]
   },
   {
+    "title": "Ecommerce dashboard",
+    "description": "A single page dashboard application written in React that uses Redux for managing state.",
+    "tags":["React", "Redux", "Material UI", "recharts"],
+    "image":"/portfolio/data/product-dashboard.gif",
+    "actions": [
+      {
+        "title": "View live",
+        "url": "https://beemnet20.github.io/product_dashboard/"
+      },
+      {
+        "title": "View source",
+        "url": "https://github.com/beemnet20/product_dashboard",
+        "icon": "/portfolio/logos/github.svg"
+      }
+    ]
+
+  },
+  {
     "title":"beamCV",
     "description": "Beam computer vision. A machine learning project to  train a model to recognize the components of a beam diagram in order to be able to perform the beam analysis. Included gathering and labeling data, training the model, and testing the model.",
     "tags": ["Python", "Tensorflow", "Machine Learning", "Model Training"],
