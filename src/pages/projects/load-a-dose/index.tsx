@@ -31,8 +31,6 @@ const LoadADose: React.FC<{}> = () => {
     <div className='flex m-8 flex-col h-full'>
       <PageTitle title='LOAD-A-DOSE' id='load-a-dose' />
       <div className=' md:w-2/3 flex mx-auto'>
-        <div className=''></div>
-
         <div className=''>
           <div className='flex flex-col lg:flex-row'>
             <div className='m-4'>
