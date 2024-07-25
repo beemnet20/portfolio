@@ -19,20 +19,22 @@ function classNames(...classes: [string]) {
 }
 
 export default function Navbar() {
+  const [showBee, setShowBee] = useState(true);
   const [active, setActive] = useState<string>('');
   const [pageOrigin, setPageOrigin] = useState<string>('');
 
-  const getCurrentPage = () => { 
+  const getCurrentPage = () => {
     const path = window.location.pathname;
     let currentPage = '';
     setPageOrigin(window.location.origin);
     navigation.forEach((item) => {
       if (item.href === path) {
         currentPage = item.name;
+        setShowBee(item.name != "Home")
       }
     });
     return currentPage;
-  }
+  };
   useEffect(() => {
     setActive(getCurrentPage());
   }, []);
@@ -57,6 +59,7 @@ export default function Navbar() {
             </DisclosureButton>
           </div>
           <div className='flex-1 flex justify-start sm:justify-start'>
+            { showBee &&
             <a href='/portfolio' className=''>
               <Image
                 width={32}
@@ -66,6 +69,7 @@ export default function Navbar() {
                 alt='Workflow'
               />
             </a>
+            }
           </div>
           <div className='flex    justify-end sm:items-stretch sm:justify-start'>
             <div className='justify-end hidden sm:ml-6 sm:block'>

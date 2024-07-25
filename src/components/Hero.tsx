@@ -1,14 +1,15 @@
-import React, { useRef, useState } from 'react';
+import React, { useRef, useState, useEffect } from 'react';
 import { Canvas } from '@react-three/fiber';
 import * as THREE from 'three';
 import Image from 'next/image';
 import TypeWriter from 'typewriter-effect';
+import BeeCursor from './BeeCursor';
 
 // Step 1: Create a Hexagon Component
 const Hexagon = ({ position }: { position: THREE.Vector3 }) => {
   const ref = useRef(null);
   const [hovered, setHover] = useState(false);
-  const points = [];
+  const points: THREE.Vector2[] = [];
 
   for (let i = 0; i < 6; i++) {
     let angle = (Math.PI / 3) * i;
@@ -25,8 +26,14 @@ const Hexagon = ({ position }: { position: THREE.Vector3 }) => {
     <lineSegments
       position={position}
       ref={ref}
-      scale={hovered ? [1.1, 1.1, 1.1] : [1, 1, 1]}
-      onPointerOver={() => setHover(true)}
+      // scale={hovered ? [1.1, 1.1, 1.1] : [1, 1, 1]}
+      onPointerEnter={() => {
+        setHover(true);
+        console.log('positioin', position);
+        console.log('points', points);
+        console.log('shape', shape), 
+        console.log('geometry', geometry);
+      }}
       onPointerOut={() => setHover(false)}
     >
       <lineBasicMaterial color={hovered ? 0xfef08a : 0x000000} />
@@ -37,24 +44,46 @@ const Hexagon = ({ position }: { position: THREE.Vector3 }) => {
 
 // Step 2: Define the Hero component and fill it with hexagons
 export default function Hero() {
-  const hexagons = [];
+  const [showBeeCursor, setShowBeeCursor] = useState(false);
+  const handleShowBeeCursor = (e:MouseEvent) => {
+    console.log(e.clientX, e.clientY);
+
+    setShowBeeCursor(true);
+  };
+  useEffect(() => {
+    document.addEventListener('mousemove', handleShowBeeCursor);
+  }, []);
+
+
 
   // Create a honeycomb grid
   const hexRadius = 1;
   const gridSize = 15;
+  const gap = 0.25; 
+
+  const hexagons = [];
+
+  // Calculate hexagon dimensions
+  const hexWidth = 2 * hexRadius; // Width of the hexagon
+  const hexHeight = Math.sqrt(3) * hexRadius; // Height of the hexagon
+
+  // Calculate the distances between hexagon centers
+  const xOffset = hexWidth * 0.75 + gap; // Horizontal distance between hexagon centers
+  const yOffset = hexHeight + gap; // Vertical distance between hexagon centers
 
   for (let q = -gridSize; q <= gridSize; q++) {
     for (let r = -gridSize; r <= gridSize; r++) {
-      const x = hexRadius * 1.5 * q;
-      const y = hexRadius * Math.sqrt(3) * (r + q / 2);
+      // Calculate hexagon center position
+      const x = q * xOffset;
+      const y = (r + q / 2) * yOffset;
+
       const position = new THREE.Vector3(x, y, 0);
       hexagons.push(<Hexagon key={`${x}-${y}`} position={position} />);
     }
   }
-
   return (
-    <div id="home" className='h-screen w-full relative'>
-
+    <div id='home' className='h-screen w-full relative'>
+      {showBeeCursor && <BeeCursor />}
       <div className='absolute sm:w-half m-8  top-1/4 transform -translate-y-1/4 z-10'>
         <div className='text-4xl z-10'>
           Hi,
@@ -63,7 +92,7 @@ export default function Hero() {
           <br />
           <div className='text-3xl inline'>
             I&apos;m a{' '}
-            <div style={{color: "#fde047"}}  className='inline-block '>
+            <div style={{ color: '#fde047' }} className='inline-block '>
               <TypeWriter
                 options={{
                   strings: [
@@ -80,7 +109,12 @@ export default function Hero() {
           </div>
         </div>
         <br />
-        <a className='btn bg-yellow-500 hover:bg-yellow-700 rounded-full text-black font-bold py-2 px-4 cursor-pointer' href="/portfolio/contact">Contact me</a>
+        <a
+          className='btn bg-yellow-500 hover:bg-yellow-700 rounded-full text-black font-bold py-2 px-4 cursor-pointer'
+          href='/portfolio/contact'
+        >
+          Contact me
+        </a>
       </div>
 
       <Canvas

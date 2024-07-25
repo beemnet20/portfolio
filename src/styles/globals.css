@@ -27,6 +27,10 @@ body {
     rgb(var(--background-start-rgb));
 }
 
+#home{
+  cursor: url("/portfolio/yellow-circle-17x17.png"), auto; 
+}
+
 @layer utilities {
   .text-balance {
     text-wrap: balance;
