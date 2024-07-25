@@ -1,7 +1,6 @@
 import React, { useRef, useState, useEffect } from 'react';
 import { Canvas } from '@react-three/fiber';
 import * as THREE from 'three';
-import Image from 'next/image';
 import TypeWriter from 'typewriter-effect';
 import BeeCursor from './BeeCursor';
 
@@ -29,10 +28,6 @@ const Hexagon = ({ position }: { position: THREE.Vector3 }) => {
       // scale={hovered ? [1.1, 1.1, 1.1] : [1, 1, 1]}
       onPointerEnter={() => {
         setHover(true);
-        console.log('positioin', position);
-        console.log('points', points);
-        console.log('shape', shape), 
-        console.log('geometry', geometry);
       }}
       onPointerOut={() => setHover(false)}
     >
@@ -45,9 +40,7 @@ const Hexagon = ({ position }: { position: THREE.Vector3 }) => {
 // Step 2: Define the Hero component and fill it with hexagons
 export default function Hero() {
   const [showBeeCursor, setShowBeeCursor] = useState(false);
-  const handleShowBeeCursor = (e:MouseEvent) => {
-    console.log(e.clientX, e.clientY);
-
+  const handleShowBeeCursor = () => {
     setShowBeeCursor(true);
   };
   useEffect(() => {
