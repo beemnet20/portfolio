@@ -51,13 +51,11 @@ const OverlayImage: React.FC = () => {
         width={600}
         height={600}
         alt='Background'
-        layout=''
         style={backgroundStyle}
       />
       <Image
         src={'/portfolio/me-outline.png'}
         alt='Portrait'
-        layout='intrinsic'
         width={300}
         height={300}
         style={{
