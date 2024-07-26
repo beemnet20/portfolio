@@ -19,7 +19,7 @@ function classNames(...classes: [string]) {
 }
 
 export default function Navbar() {
-  const [showBee, setShowBee] = useState(true);
+  const [showBee, setShowBee] = useState(false);
   const [active, setActive] = useState<string>('');
   const [pageOrigin, setPageOrigin] = useState<string>('');
 
@@ -30,13 +30,13 @@ export default function Navbar() {
     navigation.forEach((item) => {
       if (item.href === path) {
         currentPage = item.name;
-        setShowBee(item.name != "Home")
       }
     });
     return currentPage;
   };
   useEffect(() => {
     setActive(getCurrentPage());
+    setShowBee(getCurrentPage() === "Home"? false:true)
   }, []);
 
   return (
