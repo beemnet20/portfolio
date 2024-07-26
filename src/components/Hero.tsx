@@ -25,7 +25,6 @@ const Hexagon = ({ position }: { position: THREE.Vector3 }) => {
     <lineSegments
       position={position}
       ref={ref}
-      // scale={hovered ? [1.1, 1.1, 1.1] : [1, 1, 1]}
       onPointerEnter={() => {
         setHover(true);
       }}
@@ -43,16 +42,17 @@ export default function Hero() {
   const handleShowBeeCursor = () => {
     setShowBeeCursor(true);
   };
+  const [isLoaded, setIsLoaded] = useState(false);
+
   useEffect(() => {
+    setIsLoaded(true);
     document.addEventListener('mousemove', handleShowBeeCursor);
   }, []);
-
-
 
   // Create a honeycomb grid
   const hexRadius = 1;
   const gridSize = 15;
-  const gap = 0.25; 
+  const gap = 0.25;
 
   const hexagons = [];
 
@@ -78,7 +78,13 @@ export default function Hero() {
     <div id='home' className='h-screen w-full relative'>
       {showBeeCursor && <BeeCursor />}
       <div className='absolute sm:w-half m-8  top-1/4 transform -translate-y-1/4 z-10'>
-        <div className='text-4xl z-10'>
+        <div
+          className='text-4xl z-10'
+          style={{
+            opacity: isLoaded ? 1 : 0,
+            transition: 'opacity 0.1s ease-in-out',
+          }}
+        >
           Hi,
           <br />
           my name is <span style={{ color: '#fde047' }}>Bee.</span>
@@ -112,7 +118,7 @@ export default function Hero() {
 
       <Canvas
         className='absolute top-0 left-0 w-full h-full'
-        camera={{ position: [0, 0, 10], fov: 0 }}
+        camera={{ position: [0, 0, 10], fov: 50 }}
       >
         {hexagons}
       </Canvas>

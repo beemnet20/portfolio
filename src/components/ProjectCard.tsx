@@ -1,5 +1,5 @@
 'use client';
-import React from 'react';
+import React, { useState, useEffect } from 'react';
 import Image from 'next/image';
 import Divider from './Divider';
 
@@ -12,8 +12,20 @@ export type Project = {
 };
 
 export default function ProjectCard({ project }: { project: Project }) {
+  const [isLoaded, setIsLoaded] = useState(false);
+
+  useEffect(() => {
+    setIsLoaded(true);
+  }, []);
+
   return (
-    <div className='max-w-sm rounded overflow-hidden shadow-yellow-900 shadow-lg bg-black flex flex-col justify-between'>
+    <div
+      style={{
+        opacity: isLoaded ? 1 : 0,
+        transition: 'opacity 1s ease-in-out',
+      }}
+      className='max-w-sm rounded overflow-hidden shadow-yellow-900 shadow-lg bg-black flex flex-col justify-between'
+    >
       <Image src={project.image} alt={project.title} width={500} height={250} />
       <div className='px-6 py-4'>
         <div className='font-bold text-xl mb-2'>{project.title}</div>
