@@ -58,7 +58,7 @@ const Contact: React.FC = () => {
 
         </div>
       ) : (
-        <form className='rounded m-4 p-4 sm:w-1/2 mx-auto bg-gradient-to-r from-orange-200 via-amber-200 to-yellow-200'>
+        <form className='rounded w-full md:w-2/3 lg:w-1/2  m-4 p-4 mx-auto bg-gradient-to-r from-orange-200 via-amber-200 to-yellow-200'>
           <h3 className='font-bold text-xl text-black mb-4'>Contact me</h3>
           <div className='grid grid-cols-1 gap-2'>
             <div className=''>
