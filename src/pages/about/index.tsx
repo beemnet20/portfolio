@@ -1,31 +1,33 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import Image from 'next/image';
 import PageTitle from '../../components/PageTitle';
-import { link } from 'fs';
+import OverlayImage from '@/components/OverlayImage';
 
 const SkillCard = (
   skill: string,
   icon: string,
   description: string,
   link: string,
+  invert?: boolean
 ) => {
   return (
-    <div key={skill} className=' rounded-lg  bg-gray-100'>
+    <div key={skill} className=' rounded-lg border'>
       <div className='flex flex-row justify-between'>
         <div className='flex'>
           <Image
             className='p-4  inline-block'
+            style={{filter: invert ?'invert(100%)':'none'}}
             width={65}
             height={65}
             src={icon}
             alt={skill}
           />
           <div className='inline-block my-auto'>
-            <span className='text-black text-l font-bold mx-0 inline-block'>
+            <span className=' text-l font-bold mx-0 inline-block'>
               {skill}
             </span>
             <br />
-            <span className='text-black text-sm  mx-0 inline-block'>
+            <span className=' text-sm  mx-0 inline-block'>
               {description}
             </span>
           </div>
@@ -34,6 +36,7 @@ const SkillCard = (
         <a href={link} target='_blank' className='flex p-4'>
           <Image
             className=''
+            style = {{filter: 'invert(100%)'}}
             width={25}
             height={25}
             src='/portfolio/external-link.svg'
@@ -46,7 +49,12 @@ const SkillCard = (
 };
 
 const About: React.FC = () => {
-  const [size, setSize] = useState<number>(300);
+
+  const [isLoaded, setIsLoaded] = useState(false);
+
+  useEffect(() => {
+    setIsLoaded(true);
+  }, []);
 
   const skills = [
     {
@@ -60,6 +68,7 @@ const About: React.FC = () => {
       description: 'React Framework',
       icon: '/portfolio/logos/nextjs.svg',
       link: 'https://nextjs.org/',
+      invert: true
     },
     {
       skill: 'Node.js',
@@ -96,6 +105,7 @@ const About: React.FC = () => {
       description: 'Style Sheets',
       icon: '/portfolio/logos/css.svg',
       link: 'https://developer.mozilla.org/en-US/docs/Web/CSS',
+      invert: true
     },
     {
       skill: 'Python',
@@ -148,42 +158,26 @@ const About: React.FC = () => {
   ];
   return (
     <div className='flex m-8 flex-col h-full'>
-      <PageTitle title='About me' id='about' />
-
-      <section className=''>
-        <div>
-          <div className='flex flex-col lg:flex-row'>
-            <div
-              className='lg:mr-4 mb-4 '
-              onMouseOver={() => setSize(400)}
-              onMouseOut={() => setSize(300)}
-            >
-              <Image
-                width={size}
-                height={size}
-                className=' '
-                src='/portfolio/me.jpg '
-                alt='Profile Picture'
-              />
-            </div>
-            <p className='text-lg'>
-              I&apos;m Beemnet (Bee) Workeneh, a full stack developer based in
-              Seattle, WA. My educational background is in Mechanical
-              Engineering. My capstone project was the first time that I was
-              exposed to coding and I fell in love with it. I have been coding
-              ever since. I am passionate about creating beautiful and
-              functional applications. This website contains some of projects
-              that I have worked that highlight a subset of my skills.
-            </p>
-          </div>
+      {/* <PageTitle title='About me' id='about' /> */}
+      <div className='flex  mx-auto flex-col sm:flex-row lg:w-3/4 mx-auto'>
+        <OverlayImage />
+        <div className='m-4' style={{opacity: isLoaded ? 1 : 0, transition: 'opacity 0.5s ease-in-out'}}>
+          <h1 className='text-6xl mb-4'>Hello. I&apos;m <span style={{ color: '#fde047' }}>Bee</span>mnet Workeneh </h1>
+          <p className='mb-3 first-letter:text-7xl first-letter:font-bold first-letter:me-3 first-letter:float-start'>
+            I am full stack developer based in Seattle, WA. My educational
+            background is in Mechanical Engineering. My capstone project was the
+            first time that I was exposed to coding and I fell in love with it.
+            I have been coding ever since. I am passionate about creating
+            beautiful and functional applications. This website contains some of
+            projects that I have worked that highlight a subset of my skills.
+          </p>
         </div>
-        <br />
-      </section>
-      <section>
-        <h2 className='text-lg'>I have experience with </h2>
+      </div>
+      <section className='mt-8 lg:w-3/4 mx-auto' style={{opacity: isLoaded ? 1 : 0, transition: 'opacity 2s ease-in-out'}}>
+        <h2 className='text-xl'>I have experience with </h2>
         <div className='mt-2 grid sm:grid-cols-2 lg:grid-cols-3 gap-4 w-half'>
           {skills.map((skill) =>
-            SkillCard(skill.skill, skill.icon, skill.description, skill.link),
+            SkillCard(skill.skill, skill.icon, skill.description, skill.link, skill.invert),
           )}
         </div>
         <span>and more...</span>

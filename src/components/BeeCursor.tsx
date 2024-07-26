@@ -40,6 +40,7 @@ const BeeCursor: React.FC = () => {
 
     const beeStyle: React.CSSProperties = {
         transformOrigin: 'center',
+        zIndex: 10000
     };
 
     return (

@@ -112,7 +112,7 @@ export default function Hero() {
 
       <Canvas
         className='absolute top-0 left-0 w-full h-full'
-        camera={{ position: [0, 0, 10], fov: 75 }}
+        camera={{ position: [0, 0, 10], fov: 0 }}
       >
         {hexagons}
       </Canvas>
