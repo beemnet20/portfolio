@@ -112,7 +112,7 @@ export default function Hero() {
           className='btn bg-yellow-500 hover:bg-yellow-700 rounded-full text-black font-bold py-2 px-4 cursor-pointer'
           href='/portfolio/contact'
         >
-          Contact me
+         <span style={{textDecoration: "line-through"}}>Buzz</span>{' '}Contact me
         </a>
       </div>
 

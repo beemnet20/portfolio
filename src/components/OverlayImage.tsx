@@ -47,9 +47,9 @@ const OverlayImage: React.FC = () => {
       onMouseLeave={() => setHovered(false)}
     >
       <Image
-        src={'/portfolio/yellow-hexagon.svg'}
-        width={600}
-        height={600}
+        src={'/portfolio/yellow-hexagon.png'}
+        width={650}
+        height={650}
         alt='Background'
         style={backgroundStyle}
       />
