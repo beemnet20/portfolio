@@ -1,5 +1,18 @@
 [
   {
+    "title": "banr",
+    "description": "banr: build a nuclear reactor. A mock nuclear reactor construction project management app.",
+    "tags": ["Django", "Django Rest Framework", "vue", "Quasar", "Docker"],
+    "image": "/portfolio/data/banr.gif",
+    "actions":[
+      {
+        "title": "View source",
+        "url": "https://github.com/beemnet20/banr",
+        "icon":"/portfolio/logos/github.svg"
+      }
+    ]
+  },
+  {
     "title": "Degrees of Separation",
     "description": "An interactive project that visualizes data structures and algorithms using the concept of degrees of separation.",
     "tags": ["Data Structures", "Algorithms", "Graphs", "React", "D3.js"],
@@ -49,8 +62,8 @@
   {
     "title": "Ecommerce dashboard",
     "description": "A single page dashboard application written in React that uses Redux for managing state.",
-    "tags":["React", "Redux", "Material UI", "recharts"],
-    "image":"/portfolio/data/product-dashboard.gif",
+    "tags": ["React", "Redux", "Material UI", "recharts"],
+    "image": "/portfolio/data/product-dashboard.gif",
     "actions": [
       {
         "title": "View live",
@@ -62,10 +75,9 @@
         "icon": "/portfolio/logos/github.svg"
       }
     ]
-
   },
   {
-    "title":"beamCV",
+    "title": "beamCV",
     "description": "Beam computer vision. A machine learning project to  train a model to recognize the components of a beam diagram in order to be able to perform the beam analysis. Included gathering and labeling data, training the model, and testing the model.",
     "tags": ["Python", "Tensorflow", "Machine Learning", "Model Training"],
     "image": "/portfolio/data/beamCV.gif",
@@ -73,7 +85,7 @@
       {
         "title": "View source",
         "url": "https://github.com/beemnet20/beamCV",
-        "icon":"/portfolio/logos/github.svg"
+        "icon": "/portfolio/logos/github.svg"
       },
       {
         "title": "View notebook",
