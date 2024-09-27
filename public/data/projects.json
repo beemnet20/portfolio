@@ -112,7 +112,7 @@
   },
   {
     "title": "Dash Gene Drive",
-    "description": "An open-source interactive python dash app that accompanied a researcher collegue&apos;s paper on gene drives.",
+    "description": "An open-source interactive python dash app that accompanied a paper by researcher collegue on gene drives.",
     "tags": ["Python", "Dash", "plotly", "Bootstrap", "open-source"],
     "image": "/portfolio/data/dash-gene-drive.gif",
     "actions": [
