@@ -1,4 +1,22 @@
-[
+[ 
+  {
+    "title":"MAVA",
+    "description":"A simple plotly dash application with reusable components/modules and pages.",
+    "tags":["python", "plotly", "dash","bootstrap","css"],
+    "image":"/portfolio/data/mava.gif",
+    "actions":[
+      {
+        "title":"View source",
+        "url":"https://github.com/beemnet20/mava",
+        "icon":"/portfolio/logos/github.svg"
+      },
+      {
+        "title":"View live",
+        "url":"https://mava.onrender.com/"
+      }
+    ]
+  },
+
   {
     "title": "banr",
     "description": "banr: build a nuclear reactor. A mock nuclear reactor construction project management app.",
