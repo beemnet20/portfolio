@@ -50,7 +50,7 @@
   {
     "title": "This portfolio",
     "description": "A personal portfolio website built with React and Tailwind CSS.",
-    "tags": ["Next.js", "React", "Tailwind CSS", "EmailJs", "three.js"],
+    "tags": ["Next.js", "React","TypeScript", "Tailwind CSS", "EmailJs", "three.js"],
     "image": "/portfolio/data/portfolio.gif",
     "actions": [
       {
