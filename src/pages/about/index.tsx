@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import Image from 'next/image';
-import PageTitle from '../../components/PageTitle';
 import OverlayImage from '@/components/OverlayImage';
+import Link from 'next/link'
 
 const SkillCard = (
   skill: string,
@@ -33,7 +33,7 @@ const SkillCard = (
           </div>
         </div>
 
-        <a href={link} target='_blank' className='flex p-4'>
+        <Link href={link} target='_blank' className='flex p-4'>
           <Image
             className=''
             style = {{filter: 'invert(100%)'}}
@@ -42,7 +42,7 @@ const SkillCard = (
             src='/external-link.svg'
             alt=''
           />
-        </a>
+        </Link>
       </div>
     </div>
   );

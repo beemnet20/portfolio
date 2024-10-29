@@ -2,6 +2,7 @@
 import React, { useState, useEffect } from 'react';
 import Image from 'next/image';
 import Divider from './Divider';
+import Link from 'next/link';
 
 export type Project = {
   title: string;
@@ -52,7 +53,7 @@ export default function ProjectCard({ project }: { project: Project }) {
               } flex`}
             >
               {action.icon && (
-                <a
+                <Link
                   target='_blank'
                   href={action.url}
                   className='bg-white p-2 mx-2 rounded-full inline-block'
@@ -64,10 +65,10 @@ export default function ProjectCard({ project }: { project: Project }) {
                     width={25}
                     height={25}
                   />
-                </a>
+                </Link>
               )}
               {action.title != 'View source' && (
-                <a
+                <Link
                   target='_blank'
                   href={action.url}
                   className='mx-2 bg-yellow-500 hover:bg-yellow-700 text-black font-bold p-2 rounded-full inline-block '
@@ -80,7 +81,7 @@ export default function ProjectCard({ project }: { project: Project }) {
                     width={25}
                     height={25}
                   />
-                </a>
+                </Link>
               )}
             </div>
           ))}

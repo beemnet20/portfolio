@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import Image from 'next/image';
-
+import Link from 'next/link';
 import emailjs, { EmailJSResponseStatus } from '@emailjs/browser';
 import * as EmailValidator from 'email-validator';
 const serviceId = process.env.NEXT_PUBLIC_EMAILJS_SERVICE_ID as string;
@@ -109,7 +109,7 @@ const Contact: React.FC = () => {
             ></textarea>
           </div>
           <div>
-            <a
+            <Link
               href='https://www.linkedin.com/in/beemnet-workeneh-25b579b3/'
               target='_blank'
             >
@@ -120,8 +120,8 @@ const Contact: React.FC = () => {
                 height={30}
                 className='rounded inline m-2'
               />
-            </a>
-            <a href='https://github.com/beemnet20' target='_blank'>
+            </Link>
+            <Link href='https://github.com/beemnet20' target='_blank'>
               <Image
                 src='/logos/github.svg'
                 alt='github'
@@ -129,8 +129,8 @@ const Contact: React.FC = () => {
                 height={30}
                 className='rounded inline m-2'
               />
-            </a>
-            <a href='mailto:beemnet17@gmail.com'>
+            </Link>
+            <Link href='mailto:beemnet17@gmail.com'>
               <Image
                 src='/logos/mail.svg'
                 alt='mail'
@@ -138,7 +138,7 @@ const Contact: React.FC = () => {
                 height={30}
                 className='rounded inline m-2'
               />
-            </a>
+            </Link>
 
             <button
               type='button'

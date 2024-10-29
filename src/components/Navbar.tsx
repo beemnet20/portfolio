@@ -6,6 +6,7 @@ import {
 import { Bars3Icon, XMarkIcon } from '@heroicons/react/24/outline';
 import Image from 'next/image';
 import React, { useEffect, useState } from 'react';
+import Link from 'next/link';
 
 const navigation = [
   { name: 'Home', href: '/' },
@@ -60,7 +61,7 @@ export default function Navbar() {
           </div>
           <div className='flex-1 flex justify-start sm:justify-start'>
             { showBee &&
-            <a href='/' className=''>
+            <Link href='/' className=''>
               <Image
                 width={32}
                 height={32}
@@ -68,14 +69,14 @@ export default function Navbar() {
                 src='/android-chrome-192x192.png'
                 alt='Workflow'
               />
-            </a>
+            </Link>
             }
           </div>
           <div className='flex    justify-end sm:items-stretch sm:justify-start'>
             <div className='justify-end hidden sm:ml-6 sm:block'>
               <div className='flex '>
                 {navigation.map((item) => (
-                  <a
+                  <Link
                     key={item.name}
                     href={`${pageOrigin}${item.href}`}
                     className={classNames(
@@ -89,7 +90,7 @@ export default function Navbar() {
                     onMouseLeave={() => setActive(getCurrentPage())}
                   >
                     {item.name}
-                  </a>
+                  </Link>
                 ))}
               </div>
             </div>
