@@ -3,6 +3,7 @@ import { Canvas } from '@react-three/fiber';
 import * as THREE from 'three';
 import TypeWriter from 'typewriter-effect';
 import BeeCursor from './BeeCursor';
+import Link from 'next/link';
 
 // Step 1: Create a Hexagon Component
 const Hexagon = ({ position }: { position: THREE.Vector3 }) => {
@@ -108,12 +109,12 @@ export default function Hero() {
           </div>
         </div>
         <br />
-        <a
-          className='btn bg-yellow-500 hover:bg-yellow-700 rounded-full text-black font-bold py-2 px-4 cursor-pointer'
-          href='/contact'
-        >
-         <span style={{textDecoration: "line-through"}}>Buzz</span>{' '}Contact me
-        </a>
+        <Link href='/contact' passHref>
+          <span className='btn bg-yellow-500 hover:bg-yellow-700 rounded-full text-black font-bold py-2 px-4 cursor-pointer'>
+            <span style={{ textDecoration: 'line-through' }}>Buzz</span> Contact
+            me
+          </span>
+        </Link>
       </div>
 
       <Canvas
