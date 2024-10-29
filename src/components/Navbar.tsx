@@ -8,10 +8,10 @@ import Image from 'next/image';
 import React, { useEffect, useState } from 'react';
 
 const navigation = [
-  { name: 'Home', href: '/portfolio' },
-  { name: 'About', href: '/portfolio/about' },
-  { name: 'Projects', href: '/portfolio/projects' },
-  { name: 'Contact', href: '/portfolio/contact' },
+  { name: 'Home', href: '/' },
+  { name: 'About', href: '/about' },
+  { name: 'Projects', href: '/projects' },
+  { name: 'Contact', href: '/contact' },
 ];
 
 function classNames(...classes: [string]) {
@@ -60,12 +60,12 @@ export default function Navbar() {
           </div>
           <div className='flex-1 flex justify-start sm:justify-start'>
             { showBee &&
-            <a href='/portfolio' className=''>
+            <a href='/' className=''>
               <Image
                 width={32}
                 height={32}
                 className='hidden sm:block'
-                src='/portfolio/android-chrome-192x192.png'
+                src='/android-chrome-192x192.png'
                 alt='Workflow'
               />
             </a>

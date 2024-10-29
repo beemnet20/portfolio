@@ -45,7 +45,7 @@ const BeeCursor: React.FC = () => {
 
     return (
         <div style={containerStyle} ref={beeRef}>
-            <Image style={beeStyle} id="image" height={32} width={32} src={'/portfolio/favicon-32x32.png'} alt="Bee" />
+            <Image style={beeStyle} id="image" height={32} width={32} src={'/favicon-32x32.png'} alt="Bee" />
         </div>
     );
 

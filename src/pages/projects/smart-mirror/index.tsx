@@ -5,19 +5,19 @@ import FeaturedImageGallery from '@/components/FeaturedImageGallery';
 
 const data = [
   {
-    url: '/portfolio/data/smart-mirror/smart-mirror-building-the-frame.jpg',
+    url: '/data/smart-mirror/smart-mirror-building-the-frame.jpg',
     caption: 'Building the frame for the smart mirror'
   },
   {
-    url: '/portfolio/data/smart-mirror/smart-mirror-mounting-the-frame.jpg',
+    url: '/data/smart-mirror/smart-mirror-mounting-the-frame.jpg',
     caption: 'Mounting the frame for the smart mirror'
   },
   {
-    url: '/portfolio/data/smart-mirror/smart-mirror-back-of-the-mirror.jpg',
+    url: '/data/smart-mirror/smart-mirror-back-of-the-mirror.jpg',
     caption: 'Placing the monitor on the top corner and covering the rest with black poster'
   },
   {
-    url: '/portfolio/data/smart-mirror/smart-mirror-send-alert-feature.jpg',
+    url: '/data/smart-mirror/smart-mirror-send-alert-feature.jpg',
     caption: 'Using the send alert feature to send a message to the mirror from my phhone'
   }
 ];
@@ -33,7 +33,7 @@ const SmartMirror: React.FC<{}> = () => {
           <div className='flex flex-col lg:flex-row'>
             <div className='m-4'>
               <Image
-                src='/portfolio/data/smart-mirror/smart-mirror.jpg'
+                src='/data/smart-mirror/smart-mirror.jpg'
                 alt='Smart Mirror'
                 className=''
                 width={1800}

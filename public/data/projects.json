@@ -3,12 +3,12 @@
     "title":"MAVA",
     "description":"A simple plotly dash application with reusable components/modules and pages.",
     "tags":["python", "plotly", "dash","bootstrap","css"],
-    "image":"/portfolio/data/mava.gif",
+    "image":"/data/mava.gif",
     "actions":[
       {
         "title":"View source",
         "url":"https://github.com/beemnet20/mava",
-        "icon":"/portfolio/logos/github.svg"
+        "icon":"/logos/github.svg"
       },
       {
         "title":"View live",
@@ -21,12 +21,12 @@
     "title": "banr",
     "description": "banr: build a nuclear reactor. A mock nuclear reactor construction project management app.",
     "tags": ["Django", "Django Rest Framework", "vue", "Quasar", "Docker"],
-    "image": "/portfolio/data/banr.gif",
+    "image": "/data/banr.gif",
     "actions":[
       {
         "title": "View source",
         "url": "https://github.com/beemnet20/banr",
-        "icon":"/portfolio/logos/github.svg"
+        "icon":"/logos/github.svg"
       }
     ]
   },
@@ -34,7 +34,7 @@
     "title": "Degrees of Separation",
     "description": "An interactive project that visualizes data structures and algorithms using the concept of degrees of separation.",
     "tags": ["Data Structures", "Algorithms", "Graphs", "React", "D3.js"],
-    "image": "/portfolio/data/degrees-of-separation.gif",
+    "image": "/data/degrees-of-separation.gif",
     "actions": [
       {
         "title": "View live",
@@ -43,7 +43,7 @@
       {
         "title": "View source",
         "url": "https://github.com/beemnet20/degrees-of-separation",
-        "icon": "/portfolio/logos/github.svg"
+        "icon": "/logos/github.svg"
       }
     ]
   },
@@ -51,12 +51,12 @@
     "title": "This portfolio",
     "description": "A personal portfolio website built with React and Tailwind CSS.",
     "tags": ["Next.js", "React","TypeScript", "Tailwind CSS", "EmailJs", "three.js"],
-    "image": "/portfolio/data/portfolio.gif",
+    "image": "/data/portfolio.gif",
     "actions": [
       {
         "title": "View source",
-        "url": "https://github.com/beemnet20/portfolio",
-        "icon": "/portfolio/logos/github.svg"
+        "url": "https://www.beeworkeneh.com",
+        "icon": "/logos/github.svg"
       }
     ]
   },
@@ -64,7 +64,7 @@
     "title": "MQTT case study",
     "description": "An interactive project that demonstrates Message Queuing Telemetry Transport (MQTT) in a simulation of a realworld use case: remote monitoring of mining epuipment.",
     "tags": ["MQTT", "JavaScript", "Bootstrap", "APEXCHARTS.js"],
-    "image": "/portfolio/data/mqtt-case-study.gif",
+    "image": "/data/mqtt-case-study.gif",
     "actions": [
       {
         "title": "View live",
@@ -73,7 +73,7 @@
       {
         "title": "View source",
         "url": "https://github.com/beemnet20/MQTT-case-study",
-        "icon": "/portfolio/logos/github.svg"
+        "icon": "/logos/github.svg"
       }
     ]
   },
@@ -81,7 +81,7 @@
     "title": "Ecommerce dashboard",
     "description": "A single page dashboard application written in React that uses Redux for managing state.",
     "tags": ["React", "Redux", "Material UI", "recharts"],
-    "image": "/portfolio/data/product-dashboard.gif",
+    "image": "/data/product-dashboard.gif",
     "actions": [
       {
         "title": "View live",
@@ -90,7 +90,7 @@
       {
         "title": "View source",
         "url": "https://github.com/beemnet20/product_dashboard",
-        "icon": "/portfolio/logos/github.svg"
+        "icon": "/logos/github.svg"
       }
     ]
   },
@@ -98,12 +98,12 @@
     "title": "beamCV",
     "description": "Beam computer vision. A machine learning project to  train a model to recognize the components of a beam diagram in order to be able to perform the beam analysis. Included gathering and labeling data, training the model, and testing the model.",
     "tags": ["Python", "Tensorflow", "Machine Learning", "Model Training"],
-    "image": "/portfolio/data/beamCV.gif",
+    "image": "/data/beamCV.gif",
     "actions": [
       {
         "title": "View source",
         "url": "https://github.com/beemnet20/beamCV",
-        "icon": "/portfolio/logos/github.svg"
+        "icon": "/logos/github.svg"
       },
       {
         "title": "View notebook",
@@ -115,7 +115,7 @@
     "title": "Work automation app",
     "description": "An anonymized version of a work automation app that I developed. The blog type page goes over the UI/UX design process, the technologies used, and the problems addressed.",
     "tags": ["Databases", "JavaScript", "Django", "Python"],
-    "image": "/portfolio/data/work-automation-app.gif",
+    "image": "/data/work-automation-app.gif",
     "actions": [
       {
         "title": "View live",
@@ -124,7 +124,7 @@
       {
         "title": "View source",
         "url": "https://github.com/beemnet20/Work-Automation-App",
-        "icon": "/portfolio/logos/github.svg"
+        "icon": "/logos/github.svg"
       }
     ]
   },
@@ -132,7 +132,7 @@
     "title": "Dash Gene Drive",
     "description": "An open-source interactive python dash app that accompanied a paper by researcher collegue on gene drives.",
     "tags": ["Python", "Dash", "plotly", "Bootstrap", "open-source"],
-    "image": "/portfolio/data/dash-gene-drive.gif",
+    "image": "/data/dash-gene-drive.gif",
     "actions": [
       {
         "title": "View live",
@@ -141,7 +141,7 @@
       {
         "title": "View source",
         "url": "https://github.com/InstituteforDiseaseModeling/dash-gene-drive/tree/main",
-        "icon": "/portfolio/logos/github.svg"
+        "icon": "/logos/github.svg"
       },
       {
         "title": "Paper",
@@ -153,12 +153,12 @@
     "title": "PACE-HRH-UI",
     "description": "An open-source R Shiny app that encapsulates the PACE-HRH R package for health human resources planning.",
     "tags": ["R", "Shiny", "open-source", "windows app", "figma"],
-    "image": "/portfolio/data/pace-hrh-ui.gif",
+    "image": "/data/pace-hrh-ui.gif",
     "actions": [
       {
         "title": "View source",
         "url": "https://github.com/InstituteforDiseaseModeling/PACE-HRH-UI",
-        "icon": "/portfolio/logos/github.svg"
+        "icon": "/logos/github.svg"
       }
     ]
   },
@@ -166,12 +166,12 @@
     "title": "Optimization in Shiny",
     "description": "An interactive R shiny app that demonstrates the use of the hill climbing algorithm to optimally place hospitals on a grid with houses.",
     "tags": ["R", "Shiny", "Algorithms", "Optimization"],
-    "image": "/portfolio/data/optimization-in-shiny.gif",
+    "image": "/data/optimization-in-shiny.gif",
     "actions": [
       {
         "title": "View source",
         "url": "https://github.com/beemnet20/optimization-in-shiny",
-        "icon": "/portfolio/logos/github.svg"
+        "icon": "/logos/github.svg"
       }
     ]
   },
@@ -179,16 +179,16 @@
     "title": "LOAD-A-DOSE",
     "description": "A device to help accurately load insulin into syringes for people with low visual acuity",
     "tags": ["Arduino", "3D Printing", "C++", "protyping", "wire diagrams"],
-    "image": "/portfolio/data/load-a-dose/load-a-dose.gif",
+    "image": "/data/load-a-dose/load-a-dose.gif",
     "actions": [
       {
         "title": "View source",
         "url": "https://github.com/beemnet20/LOAD-A-DOSE/blob/master/device-code.ino",
-        "icon": "/portfolio/logos/github.svg"
+        "icon": "/logos/github.svg"
       },
       {
         "title": "View more",
-        "url": "/portfolio/projects/load-a-dose"
+        "url": "/projects/load-a-dose"
       }
     ]
   },
@@ -196,11 +196,11 @@
     "title": "Smart Mirror",
     "description": "A customizable smart mirror that displays the time, weather, and news headlines. Based on popular open-source project MagicMirror2.",
     "tags": ["Raspberry Pi", "IoT", "wood working?", "cron"],
-    "image": "/portfolio/data/smart-mirror/smart-mirror.gif",
+    "image": "/data/smart-mirror/smart-mirror.gif",
     "actions": [
       {
         "title": "View more",
-        "url": "/portfolio/projects/smart-mirror"
+        "url": "/projects/smart-mirror"
       }
     ]
   }

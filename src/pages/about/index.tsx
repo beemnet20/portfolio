@@ -39,7 +39,7 @@ const SkillCard = (
             style = {{filter: 'invert(100%)'}}
             width={25}
             height={25}
-            src='/portfolio/external-link.svg'
+            src='/external-link.svg'
             alt=''
           />
         </a>
@@ -60,99 +60,99 @@ const About: React.FC = () => {
     {
       skill: 'React',
       description: 'UI Library',
-      icon: '/portfolio/logos/react.svg',
+      icon: '/logos/react.svg',
       link: 'https://react.dev/',
     },
     {
       skill: 'Next.js',
       description: 'React Framework',
-      icon: '/portfolio/logos/nextjs.svg',
+      icon: '/logos/nextjs.svg',
       link: 'https://nextjs.org/',
       invert: true
     },
     {
       skill: 'Node.js',
       description: 'JS Runtime',
-      icon: '/portfolio/logos/nodejs.svg',
+      icon: '/logos/nodejs.svg',
       link: 'https://nodejs.org/',
     },
     {
       skill: 'PostgreSQL',
       description: 'SQL Database',
-      icon: '/portfolio/logos/postgresql.svg',
+      icon: '/logos/postgresql.svg',
       link: 'https://www.postgresql.org/',
     },
     {
       skill: 'JavaScript',
       description: 'Programming Language',
-      icon: '/portfolio/logos/javascript.svg',
+      icon: '/logos/javascript.svg',
       link: 'https://developer.mozilla.org/en-US/docs/Web/JavaScript',
     },
     {
       skill: 'TypeScript',
       description: 'JS Superset',
-      icon: '/portfolio/logos/typescript.svg',
+      icon: '/logos/typescript.svg',
       link: 'https://www.typescriptlang.org/',
     },
     {
       skill: 'HTML',
       description: 'Markup Language',
-      icon: '/portfolio/logos/html.svg',
+      icon: '/logos/html.svg',
       link: 'https://developer.mozilla.org/en-US/docs/Web/HTML',
     },
     {
       skill: 'CSS',
       description: 'Style Sheets',
-      icon: '/portfolio/logos/css.svg',
+      icon: '/logos/css.svg',
       link: 'https://developer.mozilla.org/en-US/docs/Web/CSS',
       invert: true
     },
     {
       skill: 'Python',
       description: 'Programming Language',
-      icon: '/portfolio/logos/python.svg',
+      icon: '/logos/python.svg',
       link: 'https://www.python.org/',
     },
     {
       skill: 'Flask',
       description: 'Web Framework',
-      icon: '/portfolio/logos/flask.svg',
+      icon: '/logos/flask.svg',
       link: 'https://flask.palletsprojects.com/',
     },
     {
       skill: 'Git',
       description: 'Version Control',
-      icon: '/portfolio/logos/git.svg',
+      icon: '/logos/git.svg',
       link: 'https://git-scm.com/',
     },
     {
       skill: 'R',
       description: 'Stats  Language',
-      icon: '/portfolio/logos/r.svg',
+      icon: '/logos/r.svg',
       link: 'https://www.r-project.org/',
     },
     {
       skill: 'Docker',
       description: 'Containerization',
-      icon: '/portfolio/logos/docker.svg',
+      icon: '/logos/docker.svg',
       link: 'https://www.docker.com/',
     },
     {
       skill: 'Kubernetes',
       description: 'Orchestration',
-      icon: '/portfolio/logos/kubernetes.svg',
+      icon: '/logos/kubernetes.svg',
       link: 'https://kubernetes.io/',
     },
     {
       skill: 'linux',
       description: 'OS Kernel',
-      icon: '/portfolio/logos/linux.svg',
+      icon: '/logos/linux.svg',
       link: 'https://www.linux.org/',
     },
     {
       skill: 'Figma',
       description: 'Design Tool',
-      icon: '/portfolio/logos/figma.svg',
+      icon: '/logos/figma.svg',
       link: 'https://www.figma.com/',
     },
   ];

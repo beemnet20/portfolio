@@ -75,7 +75,7 @@ export default function ProjectCard({ project }: { project: Project }) {
                   {action.title}{' '}
                   <Image
                     className='inline'
-                    src='/portfolio/external-link.svg'
+                    src='/external-link.svg'
                     alt={action.title}
                     width={25}
                     height={25}

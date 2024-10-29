@@ -28,7 +28,7 @@ body {
 }
 
 #home{
-  cursor: url("/portfolio/yellow-circle-17x17.png"), auto; 
+  cursor: url("/yellow-circle-17x17.png"), auto; 
 }
 
 @layer utilities {

@@ -5,23 +5,23 @@ import FeaturedImageGallery from '@/components/FeaturedImageGallery';
 
 const data = [
   {
-    url: '/portfolio/data/load-a-dose/load-a-dose-prototypes-and-nfc-reader.jpg',
+    url: '/data/load-a-dose/load-a-dose-prototypes-and-nfc-reader.jpg',
     caption: 'Prototypes and NFC reader',
   },
   {
-    url: '/portfolio/data/load-a-dose/load-a-dose-device-inside.jpg',
+    url: '/data/load-a-dose/load-a-dose-device-inside.jpg',
     caption: 'Inside the Load-A-Dose device',
   },
   {
-    url: '/portfolio/data/load-a-dose/load-a-dose-arduino-mega-custom-shield.jpg',
+    url: '/data/load-a-dose/load-a-dose-arduino-mega-custom-shield.jpg',
     caption: 'Arduino Mega with custom shield',
   },
   {
-    url: '/portfolio/data/load-a-dose/load-a-dose-wiring-diagram.jpg',
+    url: '/data/load-a-dose/load-a-dose-wiring-diagram.jpg',
     caption: 'Wiring diagram for Load-A-Dose',
   },
   {
-    url: '/portfolio/data/load-a-dose/load-a-dose-nfc-reader-wiring-diagram.jpg',
+    url: '/data/load-a-dose/load-a-dose-nfc-reader-wiring-diagram.jpg',
     caption: 'Wiring diagram for NFC reader that reads insulin vials',
   },
 ];
@@ -35,7 +35,7 @@ const LoadADose: React.FC<{}> = () => {
           <div className='flex flex-col lg:flex-row'>
             <div className='m-4'>
               <Image
-                src='/portfolio/data/load-a-dose/load-a-dose-device.jpg'
+                src='/data/load-a-dose/load-a-dose-device.jpg'
                 alt='Load-A-Dose'
                 className=''
                 width={1800}
@@ -80,7 +80,7 @@ const LoadADose: React.FC<{}> = () => {
       <div className='flex justify-center flex-col sm:flex-row'>
         <div className='mx-2'>
           <video width={300} controls controlsList='nodownload'>
-            <source src='/portfolio/data/load-a-dose/load-a-dose-video.mp4' />
+            <source src='/data/load-a-dose/load-a-dose-video.mp4' />
           </video>
         </div>
         <div className='mx-2'>

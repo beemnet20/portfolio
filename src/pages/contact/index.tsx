@@ -114,7 +114,7 @@ const Contact: React.FC = () => {
               target='_blank'
             >
               <Image
-                src='/portfolio/logos/linkedin.svg'
+                src='/logos/linkedin.svg'
                 alt='linkedin'
                 width={30}
                 height={30}
@@ -123,7 +123,7 @@ const Contact: React.FC = () => {
             </a>
             <a href='https://github.com/beemnet20' target='_blank'>
               <Image
-                src='/portfolio/logos/github.svg'
+                src='/logos/github.svg'
                 alt='github'
                 width={30}
                 height={30}
@@ -132,7 +132,7 @@ const Contact: React.FC = () => {
             </a>
             <a href='mailto:beemnet17@gmail.com'>
               <Image
-                src='/portfolio/logos/mail.svg'
+                src='/logos/mail.svg'
                 alt='mail'
                 width={30}
                 height={30}

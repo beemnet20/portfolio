@@ -6,7 +6,7 @@ export default function Layout({ children }: { children: React.ReactNode }) {
   return (
     <>
       <Head>
-        <link rel='icon' href='/portfolio/favicon.ico' />
+        <link rel='icon' href='/favicon.ico' />
         <title>Bee Portfolio</title>
       </Head>
       <Navbar />
