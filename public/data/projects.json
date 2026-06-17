@@ -1,5 +1,22 @@
 [ 
-  {
+{
+  "title": "BPMN JS Agent", 
+  "description": "A BPMN JS Agent that uses gemma local LLM to generate BPMN diagrams from natural language descriptions of processes.",
+  "tags": ["BPMN", "LLM", "gemma", "WebAI", "open-source"],
+  "image": "/data/bpmn-js-agent.gif",
+  "actions":[
+    {
+      "title":"View source",
+      "url":"https://github.com/beemnet20/bpmn-js-agent",
+      "icon":"/logos/github.svg"
+    }, 
+    {
+      "title":"View live",
+      "url":"https://beemnet20.github.io/bpmn-js-agent/"
+    }
+  ]
+},  
+{
     "title":"MAVA",
     "description":"A simple plotly dash application with reusable components/modules and pages.",
     "tags":["python", "plotly", "dash","bootstrap","css"],
